@@ -1,0 +1,34 @@
+<div class="container">
+  <div class="details">
+<form (ngSubmit)="onSubmit()" #productForm="ngForm" enctype="multipart/form-data">
+    <div>
+      <label for="name">Name:</label>
+      <input type="text" id="name" [(ngModel)]="name" name="name" required>
+    </div>
+  <!--  
+    <label for="description">Description:</label>
+    <textarea id="description" name="description" required [(ngModel)]="foods.description"></textarea> --> 
+    <br>
+    <label for="price">Price:</label>
+    <input type="number" id="price" name="price" required [(ngModel)]="price">
+    <br>
+    <br>
+    <label for="price">stars:</label>
+    <input type="number" id="stars" name="stars" required [(ngModel)]="stars">
+    <br>
+    <br>
+    <label for="price">cookTime:</label>
+    <input type="text" id="cookTime" name="cookTime" required [(ngModel)]="cookTime">
+    <br>
+    <div >
+    <label for="images">Images:</label>
+    <input type="file" id="images" name="images"  [(ngModel)]="imageUrl" required  > 
+  </div>
+    <!-- <label for="stock">Stock:</label>
+    <input type="number" id="stock" name="stock" required [(ngModel)]="foods.stock" [(ngModel)]="foods.imageUrl"> -->
+  <br>
+    <label for="category">Category:</label>
+    <input type="text" id="category" name="category" required [(ngModel)]="tags">
+ 
+    <button type="submit">Submit</button>
+  </form> </div></div>
